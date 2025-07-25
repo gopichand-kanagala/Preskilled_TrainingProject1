@@ -4,7 +4,6 @@ abstract class ArrayData1{
 	abstract void sort(String[] arr);
 }
 
-
 class SortingArray1 extends ArrayData1{
 	
 	public void sort(String[] arr) {

@@ -6,8 +6,8 @@ public class TimerProgram {
         String[] tasks = {
             "Drink Water",
             "Do Java Programs",
-            "Complete your Lunch",
-            "Watch Movie",
+            "Eat Food",
+            "Play Cricket",
             "Practice Codes"
         };
 
@@ -16,10 +16,10 @@ public class TimerProgram {
         String a = "";
 
         for (int i = 0; i < times.length; i++) {
-            if (times[i] < 12) {
-                a = "am";
-            } else {
+            if (times[i] > 12) {
                 a = "pm";
+            } else {
+                a = "am";
             }
 
             System.out.println("Now the time is: " + times[i] + " " + a);

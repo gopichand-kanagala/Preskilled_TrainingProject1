@@ -33,7 +33,7 @@ public class SortingArraysDataUsingInterface {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String arr[]= {"Ram","Gopi","chand","kanagala"};
+		String arr[]= {"Ram","Gopi","Chand","Kanagala"};
 		
 		ArrayData a=new SortingArray();
 		a.sort(arr);
