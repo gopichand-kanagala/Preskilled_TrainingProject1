@@ -28,6 +28,8 @@ interface InterfaceWithDefault2{
 	}
 
 }
+
+
 abstract class ABSTRACTCLASS1 implements InterfaceWithDefault1,InterfaceWithDefault2{
 
 	@Override
@@ -50,10 +52,23 @@ abstract class ABSTRACTCLASS1 implements InterfaceWithDefault1,InterfaceWithDefa
 }
 
 
-public class InterfaceWithVoiDDeafultStatic {
+public class InterfaceWithVoiDDeafultStatic extends ABSTRACTCLASS1{
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		InterfaceWithDefault1 i1=new InterfaceWithVoiDDeafultStatic();
+		i1.method1();i1.method2();
+		i1.defaultMethod1();InterfaceWithDefault1.method3();
+		
+		InterfaceWithDefault2 i2=new InterfaceWithVoiDDeafultStatic();
+		i1.method1();i1.method2();
+		i1.defaultMethod1();InterfaceWithDefault2.method3();
+		
+		ABSTRACTCLASS a=new InterfaceWithVoidDefaultStatic();
+		a.method1();
+		a.method2();
+		a.method3();
+		a.defaultMethod1();
 
 	}
 
